@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Perusahaan | PT. Mutiara Desa</title>
+    <meta name="description" content="Profil PT. Mutiara Desa, perusahaan konstruksi terpercaya di Lhokseumawe, Aceh. Kenali sejarah, visi misi, struktur organisasi, dan legalitas perusahaan kami.">
+    <link rel="icon" type="image/png" href="assets/logo-mutiara-desa.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#f59e0b',
+                        accent: '#047857',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="assets/logo-mutiara-desa.jpg" alt="Logo PT. Mutiara Desa" class="h-10 w-10 object-contain rounded mr-3">
+                    <a href="index.html" class="text-xl font-bold text-primary">PT. MUTIARA DESA</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">Beranda</a>
+                    <a href="profil.html" class="text-gray-600 hover:text-primary">Profil Perusahaan</a>
+                    <a href="proyek.html" class="text-gray-600 hover:text-primary">Proyek</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-primary">Kontak</a>
+                </div>
+                <a href="kontak.html" class="hidden md:block bg-primary hover:bg-blue-800 text-white px-4 py-2 rounded-md font-medium transition duration-300">
+                    Hubungi Kami
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none" aria-label="Buka menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block text-gray-600 hover:text-primary">Beranda</a>
+                <a href="profil.html" class="block text-gray-600 hover:text-primary">Profil Perusahaan</a>
+                <a href="proyek.html" class="block text-gray-600 hover:text-primary">Proyek</a>
+                <a href="kontak.html" class="block text-gray-600 hover:text-primary">Kontak</a>
+                <a href="kontak.html" class="block bg-primary hover:bg-blue-800 text-white px-4 py-2 rounded-md font-medium transition duration-300 mt-2 text-center">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="bg-primary py-20">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Profil Perusahaan</h1>
+            <p class="text-xl md:text-2xl">Mengenal lebih dekat PT. Mutiara Desa, mitra konstruksi andal dan terpercaya.</p>
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Tentang Kami</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-600 text-lg leading-relaxed text-center">
+                    PT. Mutiara Desa adalah perusahaan konstruksi yang telah berdiri sejak 5 Maret 2004, berbasis di Lhokseumawe – Aceh. Dengan pengalaman lebih dari 20 tahun, kami melayani berbagai proyek pekerjaan sipil, mekanikal, elektrikal, fabrikasi, serta penyewaan alat berat dan tenaga kerja. Kami berkomitmen menghadirkan layanan terbaik bagi klien pemerintah dan swasta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Information Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center">Informasi Legal & Identitas Perusahaan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Identitas Perusahaan</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><span class="font-medium">Nama Perusahaan:</span> PT. Mutiara Desa</li>
+                        <li><span class="font-medium">Tanggal Berdiri:</span> 05 Maret 2004</li>
+                        <li><span class="font-medium">Didirikan di:</span> Lhokseumawe – Aceh</li>
+                        <li><span class="font-medium">Notaris:</span> Sopar Siburian, SH</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Kontak Perusahaan</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><span class="font-medium">Alamat Kantor:</span> Jl. Medan – B. Aceh – Meuria Paloh – Kec. Muara Satu – Kota Lhokseumawe</li>
+                        <li><span class="font-medium">Telepon:</span> 0852-6057-3743</li>
+                        <li><span class="font-medium">Email:</span> mutiaradesa22@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Structure Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center">Manajemen Perusahaan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-primary text-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 text-4xl font-bold">Y</div>
+                    <h3 class="text-xl font-semibold mb-2">Direktur</h3>
+                    <p class="text-gray-600">Yuni Milyana</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-primary text-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 text-4xl font-bold">M</div>
+                    <h3 class="text-xl font-semibold mb-2">Wakil Direktur</h3>
+                    <p class="text-gray-600">Musliadi</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-primary text-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 text-4xl font-bold">A</div>
+                    <h3 class="text-xl font-semibold mb-2">Komisaris</h3>
+                    <p class="text-gray-600">Muhammad Ali</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-4 text-center">Visi & Misi</h2>
+            <p class="text-xl text-gray-600 mb-12 text-center">Komitmen kami terhadap kualitas dan kepercayaan</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Visi</h3>
+                    <blockquote class="text-gray-600 italic border-l-4 border-secondary pl-4 py-2">
+                        Menjadi Partner Kerja Yang Terpercaya Bagi Pemerintah Dan Perusahaan/Institusi Pengguna Jasa Dalam Bidang Konstruksi dan Suplayer.
+                    </blockquote>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Misi</h3>
+                    <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                        <li>Menjadi perusahaan yang bermanfaat bagi pemerintah, perusahaan/institusi dan tenaga kerja.</li>
+                        <li>Memberikan pelayanan terbaik kepada pengguna jasa.</li>
+                        <li>Melakukan perbaikan kinerja perusahaan secara berkelanjutan.</li>
+                        <li>Saling menghormati dalam membina kerja sama yang kondusif dan efisien.</li>
+                        <li>Membantu pemerintah dalam peningkatan kesempatan kerja dan ekonomi masyarakat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Proyek -->
+    <section class="py-12 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-6 text-primary">Struktur Organisasi Proyek</h2>
+
+        <!-- Level 1 -->
+        <div class="mb-6">
+          <p class="font-semibold text-lg">MUHAMMAD</p>
+          <p class="text-sm text-gray-600">Proyek Manager</p>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div>
+            <p class="font-semibold">TARMIZA</p>
+            <p class="text-sm text-gray-600">QC, Control Manager</p>
+          </div>
+          <div>
+            <p class="font-semibold">MUHAMMAD ALI</p>
+            <p class="text-sm text-gray-600">Administration & Finance Manager</p>
+          </div>
+        </div>
+
+        <!-- Level 3 -->
+        <div class="mb-6">
+          <p class="font-semibold">SYAHRUL DEDEK</p>
+          <p class="text-sm text-gray-600">HSE Coordinator / Operation Manager</p>
+        </div>
+
+        <!-- Level 4 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <p class="font-semibold">NURDIN</p>
+            <p class="text-sm text-gray-600">HSE Officer / Field Coordinator</p>
+          </div>
+          <div>
+            <p class="font-semibold">MUSLIADI</p>
+            <p class="text-sm text-gray-600">Personels Staff HSE</p>
+          </div>
+        </div>
+
+        <!-- Approval -->
+        <div class="mt-12 text-sm text-gray-500">
+          <p>Disetujui Oleh:</p>
+          <p class="font-semibold">Yuni Milyana</p>
+          <p>Direktur Utama</p>
+          <p>Lhokseumawe, 18 Januari 2021</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Struktur Organisasi HSE -->
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-6 text-primary">Struktur Organisasi HSE</h2>
+
+        <!-- Level 1 -->
+        <div class="mb-6">
+          <p class="font-semibold text-lg">YUNI MILYANA</p>
+          <p class="text-sm text-gray-600">Pembina HSE / Direktur Utama</p>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div>
+            <p class="font-semibold">MUHAMMAD ALI</p>
+            <p class="text-sm text-gray-600">Anggota Komite SHSE / Marketing & Commercial Manager</p>
+          </div>
+          <div>
+            <p class="font-semibold">MUHAMMAD</p>
+            <p class="text-sm text-gray-600">Anggota Komite HSE / Administrasi & Finance Manager</p>
+          </div>
+        </div>
+
+        <!-- Level 3 -->
+        <div class="mb-6">
+          <p class="font-semibold">SYAHRUL DEDEK</p>
+          <p class="text-sm text-gray-600">HSE Coordinator / Operation Manager</p>
+        </div>
+
+        <!-- Level 4 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <p class="font-semibold">NURDIN</p>
+            <p class="text-sm text-gray-600">HSE Officer / Field Coordinator</p>
+          </div>
+          <div>
+            <p class="font-semibold">MUSLIADI</p>
+            <p class="text-sm text-gray-600">Personels Staff HSE</p>
+          </div>
+        </div>
+
+        <!-- Approval -->
+        <div class="mt-12 text-sm text-gray-500">
+          <p>Disetujui Oleh:</p>
+          <p class="font-semibold">Yuni Milyana</p>
+          <p>Direktur Utama</p>
+          <p>Lhokseumawe, 18 Januari 2021</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sertifikat / Izin Usaha -->
+    <section class="py-12 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-2xl font-bold mb-4 text-primary">Sertifikat & Legalitas</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
+            <div>
+                <img src="assets/sertifikat1.png" alt="Sertifikat PT. Mutiara Desa" class="w-56 h-72 object-cover rounded-lg shadow mx-auto">
+                <p class="mt-2 text-gray-600 text-sm">Sertifikat Perusahaan</p>
+            </div>
+            <div>
+                <img src="assets/sertifikat2.png" alt="Ijin Usaha PT. Mutiara Desa" class="w-56 h-72 object-cover rounded-lg shadow mx-auto">
+                <p class="mt-2 text-gray-600 text-sm">Ijin Usaha</p>
+            </div>
+            <div>
+                <img src="assets/sertifikat3.png" alt="Sertifikat Lain PT. Mutiara Desa" class="w-56 h-72 object-cover rounded-lg shadow mx-auto">
+                <p class="mt-2 text-gray-600 text-sm">Sertifikat Lain</p>
+            </div>
+        </div>
+        <p class="text-gray-600 italic mb-6">Informasi sertifikasi dan legalitas akan ditambahkan di halaman ini.</p>
+        <a href="https://drive.google.com/file/d/1y7sULshAPqMuBAvwaAlkjG7xIjtfg8wB/view?usp=sharing" target="_blank" rel="noopener"
+           class="inline-flex items-center bg-primary hover:bg-blue-900 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-300">
+            <i class="fas fa-download mr-2"></i> Download Company Profile
+        </a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="assets/logo-mutiara-desa.png" alt="Logo PT. Mutiara Desa" class="h-10 w-10 object-contain rounded mr-3">
+                        <span class="text-xl font-bold">PT. MUTIARA DESA</span>
+                    </div>
+                    <p class="mb-4 text-gray-300">Perusahaan konstruksi profesional yang berkomitmen memberikan hasil kerja terbaik sejak 2004.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-secondary"></i>
+                            <span>Jl. Medan – B. Aceh – Meuria Paloh – Lhokseumawe</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-secondary"></i>
+                            <span>0852-6057-3743</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-secondary"></i>
+                            <span>mutiaradesa22@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Beranda</a></li>
+                        <li><a href="profil.html" class="text-gray-300 hover:text-white">Profil Perusahaan</a></li>
+                        <li><a href="proyek.html" class="text-gray-300 hover:text-white">Proyek</a></li>
+                        <li><a href="kontak.html" class="text-gray-300 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 PT. Mutiara Desa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let isOpen = false;
+
+            mobileMenuButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                isOpen = !isOpen;
+                mobileMenu.classList.toggle('hidden', !isOpen);
+            });
+
+            document.addEventListener('click', function(e) {
+                if (isOpen && !mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                    isOpen = false;
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+    <!-- Tambahkan di sebelum </body> pada setiap halaman: profil.html, proyek.html, kontak.html -->
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/6285260573743" target="_blank" rel="noopener" aria-label="WhatsApp"
+           class="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+</body>
+</html>
