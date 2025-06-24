@@ -158,14 +158,75 @@
         </div>
     </section>
 
-    <!-- Mitra & Klien -->
+    <!-- Mitra & Klien (Infinity Loop Slider) -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl font-bold mb-8 text-primary text-center">Mitra & Klien</h2>
-            <div class="flex flex-wrap justify-center items-center gap-8">
-                <div class="bg-gray-100 rounded shadow px-8 py-4 text-gray-400 text-lg font-semibold">[Logo/Instansi 1]</div>
-                <div class="bg-gray-100 rounded shadow px-8 py-4 text-gray-400 text-lg font-semibold">[Logo/Instansi 2]</div>
-                <div class="bg-gray-100 rounded shadow px-8 py-4 text-gray-400 text-lg font-semibold">[Logo/Instansi 3]</div>
+            <div class="relative overflow-hidden">
+                <div id="client-slider" class="flex transition-transform duration-700 ease-in-out will-change-transform">
+                    <!-- 10 logo asli -->
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/1.png" alt="Klien 1" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/2.png" alt="Klien 2" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/3.png" alt="Klien 3" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/4.png" alt="Klien 4" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/5.png" alt="Klien 5" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/6.png" alt="Klien 6" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/7.png" alt="Klien 7" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/8.png" alt="Klien 8" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/9.png" alt="Klien 9" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/10.png" alt="Klien 10" class="h-20 object-contain mb-2">
+                    </div>
+                    <!-- Duplikasi untuk infinity loop -->
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/1.png" alt="Klien 1" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/2.png" alt="Klien 2" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/3.png" alt="Klien 3" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/4.png" alt="Klien 4" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/5.png" alt="Klien 5" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/6.png" alt="Klien 6" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/7.png" alt="Klien 7" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/8.png" alt="Klien 8" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/9.png" alt="Klien 9" class="h-20 object-contain mb-2">
+                    </div>
+                    <div class="flex-shrink-0 w-48 flex flex-col items-center px-4">
+                        <img src="assets/10.png" alt="Klien 10" class="h-20 object-contain mb-2">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -229,7 +290,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
-                <p>&copy; 2023 PT. Mutiara Desa. All rights reserved.</p>
+                <p>&copy; 2025 PT. Mutiara Desa. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -264,5 +325,30 @@
             <i class="fab fa-whatsapp text-2xl"></i>
         </a>
     </div>
+
+    <!-- Autorun slider sederhana (tanpa library) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.getElementById('client-slider');
+            const slideCount = 10; // jumlah logo unik
+            const slideWidth = slider.children[0].offsetWidth;
+            let index = 0;
+
+            setInterval(() => {
+                index++;
+                slider.style.transition = 'transform 0.7s cubic-bezier(0.4,0,0.2,1)';
+                slider.style.transform = `translateX(-${index * slideWidth}px)`;
+
+                // Reset ke awal tanpa animasi saat mencapai duplikat slide pertama
+                if (index === slideCount) {
+                    setTimeout(() => {
+                        slider.style.transition = 'none';
+                        slider.style.transform = 'translateX(0)';
+                        index = 0;
+                    }, 700);
+                }
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
