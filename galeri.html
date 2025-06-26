@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri | PT. Mutiara Desa</title>
+    <meta name="description" content="Galeri foto PT. Mutiara Desa: dokumentasi proyek, kegiatan CSR, sosial, penghargaan, dan sertifikat perusahaan konstruksi profesional di Aceh.">
+    <link rel="icon" type="image/png" href="assets/logo-mutiara-desa.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#f59e0b',
+                        accent: '#047857',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="assets/logo-mutiara-desa.jpg" alt="Logo PT. Mutiara Desa" class="h-10 w-10 object-contain rounded mr-3">
+                    <a href="index.html" class="text-xl font-bold text-primary">PT. MUTIARA DESA</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Beranda</a>
+                    <a href="profil.html" class="font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Profil Perusahaan</a>
+                    <a href="proyek.html" class="font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Proyek</a>
+                    <a href="galeri.html" class="font-bold text-white bg-primary px-3 py-2 rounded border-b-4 border-secondary shadow transition duration-200">Galeri</a>
+                    <a href="kontak.html" class="font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Kontak</a>
+                </div>
+                <a href="kontak.html" class="hidden md:block bg-primary hover:bg-blue-800 text-white px-4 py-2 rounded-md font-semibold transition duration-300">
+                    Hubungi Kami
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none" aria-label="Buka menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Beranda</a>
+                <a href="profil.html" class="block font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Profil Perusahaan</a>
+                <a href="proyek.html" class="block font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Proyek</a>
+                <a href="galeri.html" class="block font-bold text-white bg-primary px-3 py-2 rounded border-b-4 border-secondary shadow transition duration-200">Galeri</a>
+                <a href="kontak.html" class="block font-semibold text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded transition duration-200">Kontak</a>
+                <a href="kontak.html" class="block bg-primary hover:bg-blue-800 text-white px-4 py-2 rounded-md font-semibold transition duration-300 mt-2 text-center">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Judul Halaman -->
+    <section class="bg-primary py-16">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Galeri</h1>
+            <p class="text-lg md:text-xl">Dokumentasi Proyek, Kegiatan Sosial, dan Penghargaan PT. Mutiara Desa</p>
+        </div>
+    </section>
+
+    <!-- Galeri Proyek -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-primary mb-8 text-center">Galeri Proyek</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-proyek-1.jpg" alt="Proyek 1" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Pekerjaan Sipil di Lokasi Proyek</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-proyek-2.jpg" alt="Proyek 2" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Instalasi Mekanikal & Elektrikal</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-proyek-3.jpg" alt="Proyek 3" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Fabrikasi & Pemasangan Piping</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri CSR / Sosial -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-primary mb-8 text-center">Kegiatan CSR & Sosial</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-csr-1.jpg" alt="CSR 1" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Bakti Sosial di Masyarakat</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-csr-2.jpg" alt="CSR 2" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Donasi Pendidikan</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-csr-3.jpg" alt="CSR 3" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Kegiatan Lingkungan Hidup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Penghargaan / Sertifikat -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-primary mb-8 text-center">Penghargaan & Sertifikat</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-sertifikat-1.jpg" alt="Sertifikat 1" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Penghargaan Pertamina Perta Arun Gas</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-sertifikat-2.jpg" alt="Sertifikat 2" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Penghargaan EPC ARUN LNG HUB</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow p-2">
+                    <img src="assets/galeri-sertifikat-3.jpg" alt="Sertifikat 3" class="rounded-lg w-full h-56 object-cover mb-2">
+                    <p class="text-center text-gray-700 text-sm">Sertifikat PT. IKPT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="assets/logo-mutiara-desa.png" alt="Logo PT. Mutiara Desa" class="h-10 w-10 object-contain rounded mr-3">
+                        <span class="text-xl font-bold">PT. MUTIARA DESA</span>
+                    </div>
+                    <p class="mb-4 text-gray-300">Perusahaan konstruksi profesional yang berkomitmen memberikan hasil kerja terbaik sejak 2004.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-secondary"></i>
+                            <span>Jl. Medan – B. Aceh – Meuria Paloh – Lhokseumawe</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-secondary"></i>
+                            <span>0852-6057-3743</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-secondary"></i>
+                            <span>mutiaradesa22@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Beranda</a></li>
+                        <li><a href="profil.html" class="text-gray-300 hover:text-white">Profil Perusahaan</a></li>
+                        <li><a href="proyek.html" class="text-gray-300 hover:text-white">Proyek</a></li>
+                        <li><a href="galeri.html" class="text-gray-300 hover:text-white">Galeri</a></li>
+                        <li><a href="kontak.html" class="text-gray-300 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 PT. Mutiara Desa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/6285260573743" target="_blank" rel="noopener" aria-label="WhatsApp"
+           class="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Mobile menu script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let isOpen = false;
+
+            mobileMenuButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                isOpen = !isOpen;
+                mobileMenu.classList.toggle('hidden', !isOpen);
+            });
+
+            document.addEventListener('click', function(e) {
+                if (isOpen && !mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                    isOpen = false;
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
