@@ -12,7 +12,7 @@ const galleries = [
   {
     containerId: 'galeri-penghargaan',
     imagePrefix: 'galeri-penghargaan-',
-    imageCount: 6,
+    imageCount: 17,
   },
 ];
 
